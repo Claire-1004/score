@@ -9,7 +9,15 @@ Original file is located at
 
 score=input().split()
 countF=0
+min,max=int(score[0]),int(score[0])
 for i in score:
   if int(i)<60:
     countF+=1
+if int(i)>max:
+    max=int(i)
+if int(i)<min:
+    min=int(i)
 print("不及格人數:",countF)
+print("min: ",min)
+print("max: ",max)
+
